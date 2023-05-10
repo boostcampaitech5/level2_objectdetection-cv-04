@@ -1,0 +1,3 @@
+- 참고문헌: https://dacon.io/en/codeshare/1773
+- annotation들의 분포를 고려하여 train, val 분할한 json (StratifiedGroupKFold)
+- json indentation: https://json-indent.com/ 
