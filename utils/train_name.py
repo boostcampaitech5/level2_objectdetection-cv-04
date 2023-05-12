@@ -159,6 +159,9 @@ def main():
     if cfg.get("cudnn_benchmark", False):
         torch.backends.cudnn.benchmark = True
 
+    # 바로 밑의 if 문에서 true가 날수 있도록 work_dir 설정
+    # work_dir은 consumer 파일 안에 있음
+    args.work_dir = osp.join("./work_dirs", args.name)
     # work_dir is determined in this priority: CLI > segment in file > filename
     if args.work_dir is not None:
         # update configs according to CLI args if args.work_dir is not None
