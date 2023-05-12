@@ -1,0 +1,6 @@
+# python -B producer.py -c ./exp.yaml -m ./mmcfg.py
+
+EXP_NAME: "Last_test" # wandb저장을 위한 이름을 적어주세요
+WORKER: "Park junseo"
+
+# CONFIGS:  # 컨피그 4개의 파일은 전부 붙여넣어주세요
