@@ -30,7 +30,6 @@ from mmdet.utils import (
 def parse_args():
     parser = argparse.ArgumentParser(description="Train a detector")
     parser.add_argument("config", help="train config file path")
-    parser.add_argument("--work-dir", help="the dir to save logs and models")
     parser.add_argument("--resume-from", help="the checkpoint file to resume from")
     parser.add_argument(
         "--auto-resume",
@@ -159,18 +158,9 @@ def main():
     if cfg.get("cudnn_benchmark", False):
         torch.backends.cudnn.benchmark = True
 
-    # 바로 밑의 if 문에서 true가 날수 있도록 work_dir 설정
     # work_dir은 consumer 파일 안에 있음
-    args.work_dir = osp.join("./work_dirs", args.name)
-    # work_dir is determined in this priority: CLI > segment in file > filename
-    if args.work_dir is not None:
-        # update configs according to CLI args if args.work_dir is not None
-        cfg.work_dir = args.work_dir
-    elif cfg.get("work_dir", None) is None:
-        # use config filename as default work_dir if cfg.work_dir is None
-        cfg.work_dir = osp.join(
-            "./work_dirs", osp.splitext(osp.basename(args.config))[0]
-        )  # config 파일 이름으로 설정함
+    # the dir to save logs and models
+    cfg.work_dir = osp.join("./work_dirs", args.name)
 
     if args.resume_from is not None:
         cfg.resume_from = args.resume_from
