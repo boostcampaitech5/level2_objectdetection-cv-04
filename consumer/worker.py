@@ -19,9 +19,6 @@ def make_dir():
     if not os.path.exists("error_logs"):
         os.mkdir("error_logs")
 
-    # if not os.path.exists("checkpoints"):
-    #     os.mkdir("checkpoints")
-
 
 # 디스코드 알림 전송 함수
 def discord_notice(channel, config, header, status="", error_msg=""):
@@ -48,9 +45,6 @@ def trainer(config_path):
     # 디스코드 알림 전송 (학습 시작)
     discord_notice(discord_log_channel, config, "TRAIN START")
 
-    # mmcfg_name = "configs.py"
-    # mmcfg = imp.load_source(mmcfg_name, mmcfg_path)
-
     # 모델 학습 커맨드 실행
     command = f"python ../utils/train_name.py configs.py --name {config['EXP_NAME']}"
     # 파이썬 명령어 실행하는 함수
@@ -61,15 +55,6 @@ def trainer(config_path):
     # 결과 저장 및 디스코드 알림 전송 (에러 발생 여부에 따라)
     make_dir()
     if process.returncode == 0:
-        # if not os.path.exists(f"checkpoints/{config['EXP_NAME']}"):
-        #     os.mkdir(f"checkpoints/{config['EXP_NAME']}")
-        # shutil.move(
-        #     config_path, f"checkpoints/{config['EXP_NAME']}/{config['EXP_NAME']}.yaml"
-        # )
-        # shutil.move(
-        #     f"{config['EXP_NAME']}.pth",
-        #     f"checkpoints/{config['EXP_NAME']}/{config['EXP_NAME']}.pth",
-        # )
         discord_notice(discord_log_channel, config, "TRAIN FINISH", status="SUCCESS")
     else:
         if not os.path.exists(f"error_logs/{config['EXP_NAME']}"):
