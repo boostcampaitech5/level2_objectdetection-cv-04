@@ -46,7 +46,7 @@ def trainer(config_path):
     discord_notice(discord_log_channel, config, "TRAIN START")
 
     # 모델 학습 커맨드 실행
-    command = f"python ../utils/train_name.py configs.py --name {config['EXP_NAME']}"
+    command = f"python ../utils/train_name.py configs.py --name {config['EXP_NAME']} --seed {config['SEED']} --deterministic {config['DETERMINISTIC']}"
     # 파이썬 명령어 실행하는 함수
     process = subprocess.Popen(command, shell=True, stderr=subprocess.PIPE)
     process.wait()
