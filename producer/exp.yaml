@@ -4,4 +4,6 @@
 EXP_NAME: "last_test"
 WORKER: "Park junseo"
 
-# CONFIGS:  # 컨피그 4개의 파일은 전부 붙여넣어주세요
+# 실험의 재현을 위한 arguments
+SEED: 42
+DETERMINISTIC: True
