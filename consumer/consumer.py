@@ -39,11 +39,12 @@ class Consumer:
         # 디코딩한 message를 json으로 load
         message_json = json.loads(message)
         # print(type(message))
-        # worker 호출
-        worker.worker(message_json)
 
         # worker 작업이 끝난 후에 브로커로 ACK 전달
         channel.basic_ack(delivery_tag=method_frame.delivery_tag)
+
+        # worker 호출
+        worker.worker(message_json)
 
         print("Done")
 
