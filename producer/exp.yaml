@@ -1,6 +1,7 @@
 # python -B producer.py -c ./exp.yaml -m ./mmcfg.py
 
 # wandb저장을 위한 이름을 적어주세요, 이름을 적을때 띄어쓰기를 적으면 안됩니다.
+# 뒤에 번호는 언더바('_')를 붙여서 쓰도록 합니다.
 EXP_NAME: "cascade_rcnn3"
 WORKER: "junseo"
 
