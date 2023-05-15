@@ -1,9 +1,8 @@
 # python -B producer.py -c ./exp.yaml -m ./mmcfg.py
 
 # wandb저장을 위한 이름을 적어주세요, 이름을 적을때 띄어쓰기를 적으면 안됩니다.
-EXP_NAME: "last_test"
-WORKER: "Park junseo"
+EXP_NAME: "cascade_rcnn3"
+WORKER: "junseo"
 
 # 실험의 재현을 위한 arguments
 SEED: 42
-DETERMINISTIC: True
