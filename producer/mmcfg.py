@@ -372,18 +372,26 @@ lr_config = dict(
 )
 runner = dict(type="EpochBasedRunner", max_epochs=1)  # epoch이 1로 설정되어 있어요
 checkpoint_config = dict(interval=1)
+
+"""
+producer로 올릴 config의 log_config를 아래와 같이 사용하면 됩니다.
+"""
+
 log_config = dict(
     interval=500,
     hooks=[
         dict(type="TextLoggerHook", interval=500),
         dict(
-            type="WandbLoggerHook",
+            type="MMDetWandbHook",
             interval=1000,
             init_kwargs=dict(
                 project="Recycle Project",
                 entity="level1-cv19",
                 name="cascade_rcnn_r50_fpn_1x",
             ),
+            log_checkpoint = True,
+            log_checkpoint_metadata = True,
+            num_eval_images=100
         ),
     ],
 )
