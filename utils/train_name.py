@@ -129,6 +129,9 @@ def main():
     # update wandb logging name
     cfg.log_config.hooks[1].init_kwargs.name = args.name
 
+    # print classwise ap
+    cfg.evaluation.classwise = True
+
     # update data root according to MMDET_DATASETS
     update_data_root(cfg)
 
