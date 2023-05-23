@@ -1,0 +1,20 @@
+# Dataset for object detection on trash by upstage
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../../dataset/yolo_dataset  # dataset root dir
+train: images/train/
+val: images/val/
+test: ../test/
+
+# Classes
+names:
+  0: General trash
+  1: Paper
+  2: Paper pack
+  3: Metal
+  4: Glass
+  5: Plastic
+  6: Styrofoam
+  7: Plastic bag
+  8: Battery
+  9: Clothing
