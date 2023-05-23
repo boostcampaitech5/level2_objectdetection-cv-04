@@ -270,3 +270,12 @@ hubconf.py
 README.md
 README.zh-CN.md
 tutorial.ipynb
+
+#utils
+utils/aws
+utils/docker
+utils/flask_rest_api
+utils/google_app_engine
+utils/segment
+utils/loggers/clearml
+utils/loggers/commet
