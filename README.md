@@ -38,13 +38,12 @@
 
 
 | 팀원명 | 학습 모델 | 추가 작업 |
-| --- | --- | --- |
+| :---: | :---: | --- |
 | 강동화 | Cascade R-CNN, UniverseNet | EDA, 모델 리서치, neck 및 backbone network 리서치 |
 | 박준서 | Cascade R-CNN | EDA, mmdetection 실험 세팅, RabbitMQ 사용한 GPU scheduler 구현, Augmentation 리서치 및 실험, 모델 앙상블 |
 | 서지희 | DETR, FocalNet | GitHub setting, RabbitMQ 사용한 GPU scheduler 구현 |
 | 장철호 | Cascade R-CNN | 모델 리서치, Augmentation 리서치 및 실험 |
-| 한나영 | YOLOv5, v8 | EDA, Jira, 실험관리 spread sheet, notion template 구축, 
-ultralytics 실험 세팅, Error Analysis, 모델 앙상블 |
+| 한나영 | YOLOv5, v8 | EDA, Jira, 실험관리 spread sheet, notion template 구축, ultralytics 실험 세팅, Error Analysis, 모델 앙상블 |
 
 ![[Untitled](Recycle%20Object%20Detection%20Readme%20becffc1aba044f67916b08a876f30d02/Untitled%201.png)](https://file.notion.so/f/s/fdb7b464-8ae6-421a-b124-bf5e2b7474d4/Untitled.png?id=8d30a4ba-10fb-43d8-8b2b-5c2785588699&table=block&spaceId=da4b99d4-8977-4e20-b369-c7fbd6d0cf5d&expirationTimestamp=1684980719179&signature=Ye_Seh0ERItzWSWKtP3r0svZ6oRz6ZhqDb7_rq72gfU&downloadName=Untitled.png)
 
@@ -73,11 +72,8 @@ ultralytics 실험 세팅, Error Analysis, 모델 앙상블 |
 
 
 
-| Model | Cascade-RCNN
-(swin-S) | Cascade-RCNN
-(swin-B) | ATSS
-(Focalnet) | UniverseNet | YOLOv5 |
-| --- | --- | --- | --- | --- | --- |
+| Model | Cascade-RCNN (swin-S) | Cascade-RCNN (swin-B) | ATSS (Focalnet) | UniverseNet | YOLOv5 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | mAP 50 | 0.607 | 0.5697 | 0.55 | 0.584 | 0.5463 |
 
 
