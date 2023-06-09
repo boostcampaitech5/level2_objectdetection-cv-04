@@ -68,7 +68,7 @@
         - **UniverseNet**: Coco benchmark 이외에 작은 bbox가 많은 benchmark를 생성하고, 이에 robust한 모델을 제작하였습니다. 실험에 사용한 모델은 **UniverseNet50-20.08d** 모델로, 여러 개의 서로 다른 조합으로 연결된 네트워크로 구성됩니다. 논문에서는 SyncBN을 사용했으나, 구현 상의 오류로 일반 BN을 사용했습니다.
         - **ATSS FocalNet:** Transformer를 CV에 적용한 DETR같은 모델이 있었지만 epoch을 100이상으로 해야 하는 등 성능이 별로 좋지 않았습니다. 이에 대해 Self Attention을 대체한 Focal Modulation Network를 사용한 **FocalNet**을 사용했습니다.
 
-## **4. 프로젝트 수행 결과**
+## **:scroll:** 프로젝트 수행 결과**
 
 
 
