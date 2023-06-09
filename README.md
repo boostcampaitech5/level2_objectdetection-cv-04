@@ -5,8 +5,7 @@
 
 ## **✏️** Project Overview
 
-![[Untitled](Recycle%20Object%20Detection%20Readme%20becffc1aba044f67916b08a876f30d02/Untitled.png)](https://file.notion.so/f/s/f9564bd6-c973-41dc-9c0a-c50f7f38d6b3/Untitled.png?id=e601154c-cd6a-48b7-b007-0d53ccb5e8bc&table=block&spaceId=da4b99d4-8977-4e20-b369-c7fbd6d0cf5d&expirationTimestamp=1684980415123&signature=RLa3mUxbkekOqzBeZmw0lUS6a3rLiMlMgs4Q_t2BHQ8&downloadName=Untitled.png)
-
+![trash_overview](https://github.com/boostcampaitech5/level2_objectdetection-cv-04/assets/89245460/a2f47dd0-7313-44f2-9736-8622d54cae03)
 분리수거는 자원의 순환을 촉진하는 방법입니다. 우리는 효율적으로 분리수거를 수행할 수 있도록 사진에서 쓰레기를 Detection 하는 모델을 만들어 이러한 문제점을 해결해보고자 합니다.🌎
 
 - **Input :** 쓰레기 객체가 담긴 이미지가 모델의 input으로 사용됩니다. 이미지의 각 쓰레기 객체에 대한 bbox annotation은 COCO format으로 제공됩니다.
@@ -43,7 +42,7 @@
 | 장철호 | Cascade R-CNN | 모델 리서치, Augmentation 리서치 및 실험 |
 | 한나영 | YOLOv5, v8 | EDA, Jira, 실험관리 spread sheet, notion template 구축, ultralytics 실험 세팅, Error Analysis, 모델 앙상블 |
 
-![[Untitled](Recycle%20Object%20Detection%20Readme%20becffc1aba044f67916b08a876f30d02/Untitled%201.png)](https://file.notion.so/f/s/fdb7b464-8ae6-421a-b124-bf5e2b7474d4/Untitled.png?id=8d30a4ba-10fb-43d8-8b2b-5c2785588699&table=block&spaceId=da4b99d4-8977-4e20-b369-c7fbd6d0cf5d&expirationTimestamp=1684980719179&signature=Ye_Seh0ERItzWSWKtP3r0svZ6oRz6ZhqDb7_rq72gfU&downloadName=Untitled.png)
+![timeline](https://github.com/boostcampaitech5/level2_objectdetection-cv-04/assets/89245460/7b746387-d356-4377-8615-393a74e4f985)
 
 ## **❓** Dataset & EDA
 
@@ -75,4 +74,5 @@
 | mAP 50 | 0.607 | 0.5697 | 0.55 | 0.584 | 0.5463 |
 
 
-![[Image20230523172927.jpg](Recycle%20Object%20Detection%20Readme%20becffc1aba044f67916b08a876f30d02/Image20230523172927.jpg)](https://file.notion.so/f/s/099c6fca-4375-4f4f-9121-2a1e5cd7d139/Image20230523172927.jpg?id=c7caaead-63e3-4109-84d9-15f334a77e4c&table=block&spaceId=da4b99d4-8977-4e20-b369-c7fbd6d0cf5d&expirationTimestamp=1684980936858&signature=LjeKy7_yI20HkBfYw6G3ynriNrzox7dRkCv8oAMROyk&downloadName=Image20230523172927.jpg)
+![models](https://github.com/boostcampaitech5/level2_objectdetection-cv-04/assets/89245460/fca6344c-86bf-4382-8c97-49accfeb74f9)
+
