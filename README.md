@@ -5,8 +5,6 @@
 
 ## **✏️** Project Overview
 
-
-
 ![[Untitled](Recycle%20Object%20Detection%20Readme%20becffc1aba044f67916b08a876f30d02/Untitled.png)](https://file.notion.so/f/s/f9564bd6-c973-41dc-9c0a-c50f7f38d6b3/Untitled.png?id=e601154c-cd6a-48b7-b007-0d53ccb5e8bc&table=block&spaceId=da4b99d4-8977-4e20-b369-c7fbd6d0cf5d&expirationTimestamp=1684980415123&signature=RLa3mUxbkekOqzBeZmw0lUS6a3rLiMlMgs4Q_t2BHQ8&downloadName=Untitled.png)
 
 분리수거는 자원의 순환을 촉진하는 방법입니다. 우리는 효율적으로 분리수거를 수행할 수 있도록 사진에서 쓰레기를 Detection 하는 모델을 만들어 이러한 문제점을 해결해보고자 합니다.🌎
@@ -68,7 +66,7 @@
         - **UniverseNet**: Coco benchmark 이외에 작은 bbox가 많은 benchmark를 생성하고, 이에 robust한 모델을 제작하였습니다. 실험에 사용한 모델은 **UniverseNet50-20.08d** 모델로, 여러 개의 서로 다른 조합으로 연결된 네트워크로 구성됩니다. 논문에서는 SyncBN을 사용했으나, 구현 상의 오류로 일반 BN을 사용했습니다.
         - **ATSS FocalNet:** Transformer를 CV에 적용한 DETR같은 모델이 있었지만 epoch을 100이상으로 해야 하는 등 성능이 별로 좋지 않았습니다. 이에 대해 Self Attention을 대체한 Focal Modulation Network를 사용한 **FocalNet**을 사용했습니다.
 
-## **:scroll:** 프로젝트 수행 결과**
+## **:scroll: 프로젝트 수행 결과**
 
 
 
